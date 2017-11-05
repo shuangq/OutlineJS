@@ -1,0 +1,17 @@
+.my-outline{position: fixed; top: 0; bottom: 0; left: 0; overflow-y: auto; padding: 15px; border-right: 2px solid #ccc;}
+.my-outline li, .my-outline ul{margin: 0; padding: 0; line-height: 1; list-style: none;}
+.my-outline a{display: inline-block; overflow: hidden; width: 100%; height: 32px; color: #626262; line-height: 32px; cursor: pointer; vertical-align: middle; white-space: nowrap; text-overflow: ellipsis;}
+.my-outline a:hover{color: #000; font-weight: bold;text-decoration: none;}
+.top-level > a{color: #000; font-weight: bold;}
+.my-outline .level1{margin-left: 10px; font-size: 16px;}
+.my-outline .level2{margin-left: 20px; font-size: 14px;}
+.my-outline .level3{margin-left: 30px; font-size: 12px;}
+.my-outline .level4{margin-left: 35px; font-size: 12px;}
+.my-outline .level5{margin-left: 40px; font-size: 12px;}
+.my-outline .level6{margin-left: 45px; font-size: 12px;}
+.open{display: block;}
+.close{display: none;}
+.my-outline-btn{position: relative; display: inline-block; width: 20px; height: 20px; margin-left: -20px; cursor: pointer; -webkit-transition: .3s; -moz-transition: .3s; -o-transition: .3s; transition: .3s; vertical-align: middle;}
+.my-outline-btn .bar, .bar2{position: absolute; top: 2px; left: 5px; width: 7px; height: 7px; border-right: 1px solid #626262; border-bottom: 1px solid #626262; background: none; -webkit-transition: .4s; -moz-transition: .4s; -o-transition: .4s; transition: .4s; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
+.open-bar{-webkit-transform: rotate(225deg); -moz-transform: rotate(225deg); -ms-transform: rotate(225deg); transform: rotate(225deg); transform-origin: 75% 105% 0;}
+.my-outline .selected, .my-outline .selected:hover{color: #2080df; font-weight: bold;}
