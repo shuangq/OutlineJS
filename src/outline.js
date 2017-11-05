@@ -306,9 +306,9 @@ var Outline = function(opts) {
             },
             // 执行页面滚动
             scroll: function(len) {
-              if(document.documentElement.scrollTop){
+              if(document.documentElement.scrollTop !== undefined){
                 document.documentElement.scrollTop = len;
-              }else if(document.body.scrollTop){
+              }else if(document.body.scrollTop !== undefined){
                 document.body.scrollTop = len;
               }
             },
@@ -316,7 +316,7 @@ var Outline = function(opts) {
             scrollControl: function(pos) {
                 var c = conf,
                     dist,
-                    top = document.body.scrollTop || document.documentElement.scrollTop,
+                    top = document.documentElement.scrollTop || document.body.scrollTop ,
                     t = 0,
                     sTimeout;
 
